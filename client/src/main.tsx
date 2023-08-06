@@ -1,12 +1,20 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+import App from './App'
 import Home from './pages/Home'
 
 const router = createBrowserRouter([
   {
     path: '/',
-    element: <Home />
+    element: <App />,
+    errorElement: <h1>Wrong page!</h1>,
+    children: [
+      {
+        index: true,
+        element: <Home />
+      }
+    ]
   }
 ])
 
