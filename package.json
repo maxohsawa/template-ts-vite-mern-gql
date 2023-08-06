@@ -1,0 +1,16 @@
+{
+  "name": "template-ts-vite-mern-gql",
+  "version": "1.0.0",
+  "description": "## stack components - vite + typescript + react + swc - node + express - mongodb + mongoose - apollo graphql client + server - react router - tailwind",
+  "main": "index.js",
+  "scripts": {
+    "install": "cd server && npm install && cd ../client && npm install",
+    "dev": "concurrently \"cd server && npm run dev\" \"cd client && npm run dev\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^8.2.0"
+  }
+}
